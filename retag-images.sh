@@ -1,15 +1,19 @@
 #!/bin/bash
 
-registry=$1
+image_list=$1
+registry=$2
 
-if [[ -z "$registry" ]]; then
-  echo "Usage: retag-push-images.sh <registry>"
-  echo >&2 'registry not specified'
+if [[ -z "$image_list" ]]; then
+  echo "Usage: retag-images.sh <image_list.txt> <registry>"
+  echo >&2 'image_list not specified'
   exit 1
 fi
 
-
-image_list=docker_images.txt
+if [[ -z "$registry" ]]; then
+  echo "Usage: retag-images.sh <image_list.txt> <registry>"
+  echo >&2 'registry not specified'
+  exit 1
+fi
 
 while read image; do
 
@@ -19,6 +23,14 @@ while read image; do
 
   if [[ "$image" == //* ]]; then
     continue
+  fi
+
+  docker pull "$image"
+
+  if [[ $? == 0 ]]; then
+    echo "Pull Image SUCCESS: $image arch=$arch"
+  else
+    echo "Pull Image FAILED: $image arch=$arch"
   fi
 
   new_image="$registry"/library/"$image"

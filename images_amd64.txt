@@ -1,0 +1,5 @@
+// redis
+bitnami/redis:6.2
+// prometheus
+prom/snmp-generator:latest
+// end of file

@@ -1,6 +1,0 @@
-// bitnami/redis:6.2
-bitnami/redis:7.0
-// redis:7.2
-// redis:7.2-alpine
-// redis:7.0
-// redis:7.0-alpine

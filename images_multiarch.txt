@@ -1,0 +1,22 @@
+// redis
+bitnami/redis:7.0
+redis:7.2
+redis:7.2-alpine
+redis:7.0
+redis:7.0-alpine
+// golang
+golang:1.22-alpine
+// grafana
+grafana/grafana:9.1.0
+grafana/mimir:2.9.0
+// nginx
+nginx:stable-alpine
+nginxinc/nginx-unprivileged:1.24-alpine
+// minio
+minio/minio:RELEASE.2022-12-12T19-27-27Z
+minio/mc:RELEASE.2022-12-13T00-23-28Z
+// prometheus
+prom/mysqld-exporter:latest
+prom/node-exporter:latest
+prom/blackbox-exporter:latest
+// end of file
