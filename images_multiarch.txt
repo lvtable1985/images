@@ -18,6 +18,7 @@ grafana/grafana:9.1.0
 grafana/mimir:2.9.0
 // nginx
 nginx:stable-alpine
+nginx:1.19
 nginxinc/nginx-unprivileged:1.24-alpine
 // minio
 minio/minio:RELEASE.2022-12-12T19-27-27Z
