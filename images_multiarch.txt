@@ -1,3 +1,9 @@
+// elastic.co
+docker.elastic.co/elasticsearch/elasticsearch:7.8.0
+// busybox
+busybox:1.28
+// mysql
+bitnami/mysql:8.0.34-debian-11-r0
 // redis
 bitnami/redis:7.0
 redis:7.2
@@ -7,6 +13,7 @@ redis:7.0-alpine
 // golang
 golang:1.22-alpine
 // grafana
+grafana/grafana:7.0.5
 grafana/grafana:9.1.0
 grafana/mimir:2.9.0
 // nginx

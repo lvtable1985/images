@@ -1,3 +1,13 @@
+// elastic.co
+docker.elastic.co/beats/filebeat:7.8.0
+docker.elastic.co/beats/metricbeat:7.8.0
+docker.elastic.co/kibana/kibana:7.8.0
+docker.elastic.co/logstash/logstash:7.8.0
+docker.elastic.co/eck/eck-operator:1.2.1
+// fluentd
+fluent/fluentd:v1.3-onbuild-1
+// oracle-xe
+christophesurmont/oracle-xe-11g:latest
 // redis
 bitnami/redis:6.2
 // prometheus
