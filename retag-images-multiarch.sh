@@ -45,4 +45,6 @@ while read image; do
   docker buildx prune -f
   rm -f Dockerfile
   
+  echo "---------------------------------"
+  
 done < "$image_list"

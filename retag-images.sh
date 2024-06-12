@@ -50,4 +50,6 @@ while read image; do
     echo "Push Image FAILED: $new_image"
   fi
   
+  echo "---------------------------------"
+  
 done < "$image_list"
