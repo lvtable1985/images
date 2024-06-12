@@ -19,4 +19,26 @@ minio/mc:RELEASE.2022-12-13T00-23-28Z
 prom/mysqld-exporter:latest
 prom/node-exporter:latest
 prom/blackbox-exporter:latest
+// openjdk
+openjdk:8
+openjdk:8-slim
+openjdk:8-alpine
+openjdk:8-slim-bullseye
+openjdk:8-slim-buster
+openjdk:8-jre
+openjdk:8-jre-alpine
+openjdk:8-jre-slim
+// alpine
+alpine:latest
+alpine:3.19
+alpine:3.17
+// tomcat
+tomcat:7
+tomcat:7-jre8-slim
+tomcat:8.5-jdk8
+tomcat:8.5-jre8-alpine
+tomcat:8.5-jre8-openjdk-slim
+tomcat:9-jre11
+tomcat:9-alpine
+tomcat:9-jre11-openjdk-slim
 // end of file

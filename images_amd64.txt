@@ -2,4 +2,6 @@
 bitnami/redis:6.2
 // prometheus
 prom/snmp-generator:latest
+// tomcat
+tomcat:7-jre8-alpine
 // end of file
