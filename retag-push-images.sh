@@ -25,9 +25,9 @@ while read image; do
   
   docker tag "$image" "$new_image"
   if [[ $? == 0 ]]; then
-    echo "Retag Image SUCCESS: $image"
+    echo "Retag Image SUCCESS: $image => $new_image"
   else
-    echo "Retag Image FAILED: $image"
+    echo "Retag Image FAILED: $image => $new_image"
     continue
   fi
 

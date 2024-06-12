@@ -12,8 +12,9 @@ while read image; do
     continue
   fi
 
-  arch="linux/arm64"
-  
+#  arch="linux/arm64"
+  arch="linux/arm64,linux/amd64"
+    
   docker pull --platform $arch "$image"
 
   if [[ $? == 0 ]]; then
