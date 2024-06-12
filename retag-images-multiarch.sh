@@ -27,8 +27,13 @@ while read image; do
   fi
 
   new_image="$registry"/library/"$image"
+
+  # group log
+  # https://docs.github.com/en/actions/using-workflows/workflow-commands-for-github-actions#grouping-log-lines
   
   echo "FROM $image" > Dockerfile
+  
+  echo "::group::Sync $image"
   
   docker buildx build --push --platform="$archs" --force-rm --pull \
   		-t "$new_image" \
@@ -36,15 +41,15 @@ while read image; do
   		.
   
   if [[ $? == 0 ]]; then
-    echo "Retag & Push Image SUCCESS: $image => $new_image"
+    echo "Sync Image SUCCESS: $image => $new_image"
   else
-    echo "Retag & Push Image FAILED: $image => $new_image"
+    echo "Sync FAILED: $image => $new_image"
     continue
   fi
 
   docker buildx prune -f
   rm -f Dockerfile
   
-  echo "---------------------------------"
+  echo "::endgroup::"
   
 done < "$image_list"

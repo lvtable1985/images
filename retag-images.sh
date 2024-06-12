@@ -25,19 +25,24 @@ while read image; do
     continue
   fi
 
+  # group log
+  # https://docs.github.com/en/actions/using-workflows/workflow-commands-for-github-actions#grouping-log-lines
+
+  echo "::group::Sync $image"
+  
   docker pull "$image"
 
   if [[ $? == 0 ]]; then
-    echo "Pull Image SUCCESS: $image arch=$arch"
+    echo "Pull Image: $image"
   else
-    echo "Pull Image FAILED: $image arch=$arch"
+    echo "Pull Image FAILED: $image"
   fi
 
   new_image="$registry"/library/"$image"
   
   docker tag "$image" "$new_image"
   if [[ $? == 0 ]]; then
-    echo "Retag Image SUCCESS: $image => $new_image"
+    echo "Retag Image: $image => $new_image"
   else
     echo "Retag Image FAILED: $image => $new_image"
     continue
@@ -45,11 +50,11 @@ while read image; do
 
   docker push "$new_image"
   if [[ $? == 0 ]]; then
-    echo "Push Image SUCCESS: $new_image"
+    echo "Push Image: $new_image"
   else
     echo "Push Image FAILED: $new_image"
   fi
   
-  echo "---------------------------------"
+  echo "::endgroup::"
   
 done < "$image_list"
