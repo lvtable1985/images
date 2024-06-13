@@ -3,6 +3,9 @@ ubuntu:bionic
 // python
 python:3.9-alpine
 // node
+node:8-alpine
+node:14
+node:14-alpine
 node:12
 // kafka
 bitnami/kafka:3.7.0
