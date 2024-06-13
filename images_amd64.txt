@@ -2,6 +2,7 @@
 inanimate/echo-server:latest
 // bitnami
 bitnami/redis:6.2
+bitnami/redis:4.0
 bitnami/redis:5.0.8-debian-10-r33
 bitnami/bitnami-shell:10-debian-10
 // elastic.co
