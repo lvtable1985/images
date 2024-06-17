@@ -67,6 +67,7 @@ alpine:3.15
 // tomcat
 tomcat:7
 tomcat:7-jre8-slim
+tomcat:8.5-jre8
 tomcat:8.5-jdk8
 tomcat:8.5-jre8-alpine
 tomcat:8.5-jre8-openjdk-slim
