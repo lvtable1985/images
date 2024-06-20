@@ -7,6 +7,8 @@ python:3.9-alpine
 // node
 node:8-alpine
 node:14
+node:14.17.1
+node:14.21.3
 node:14-alpine
 node:12
 // kafka
@@ -42,6 +44,7 @@ grafana/mimir:2.9.0
 // nginx
 nginx:stable-alpine
 nginx:1.19
+nginx:1.19.0
 nginx:1.17.5
 nginxinc/nginx-unprivileged:1.24-alpine
 // minio
