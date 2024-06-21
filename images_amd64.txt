@@ -1,3 +1,5 @@
+// rancher
+rancher/nginx-ingress-controller:nginx-0.35.0-rancher2
 // misc
 inanimate/echo-server:latest
 // bitnami
