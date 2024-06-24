@@ -6,6 +6,12 @@ rancher/grafana-grafana:7.1.5
 rancher/coreos-prometheus-operator:v0.39.0
 rancher/mirrored-library-nginx:1.19.9-alpine
 rancher/prometheus-auth:v0.2.1
+// 以下 3 个没有 arm64 的镜像，所以放到这里来
+rancher/mirrored-calico-node:v3.17.2
+rancher/mirrored-calico-pod2daemon-flexvol:v3.17.2
+rancher/mirrored-calico-cni:v3.17.2
+rancher/mirrored-calico-kube-controllers:v3.17.2
+rancher/mirrored-nginx-ingress-controller-defaultbackend:1.5-rancher1
 // misc
 inanimate/echo-server:latest
 // bitnami

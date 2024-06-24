@@ -11,17 +11,18 @@ rancher/shell:v0.1.13
 rancher/mirrored-pause:3.6
 rancher/mirrored-metrics-server:v0.5.0
 rancher/mirrored-coreos-etcd:v3.4.15-rancher1
-rancher/mirrored-calico-node:v3.17.2
-rancher/mirrored-calico-pod2daemon-flexvol:v3.17.2
-rancher/mirrored-calico-cni:v3.17.2
+// 以下 3 个没有 arm64 的镜像
+// rancher/mirrored-calico-node:v3.17.2
+// rancher/mirrored-calico-pod2daemon-flexvol:v3.17.2
+// rancher/mirrored-calico-cni:v3.17.2
+// rancher/mirrored-calico-kube-controllers:v3.17.2
+// rancher/mirrored-nginx-ingress-controller-defaultbackend:1.5-rancher1
 rancher/mirrored-coredns-coredns:1.8.0
 rancher/mirrored-cluster-proportional-autoscaler:1.8.1
 rancher/rancher-agent:v2.5.15
 rancher/rancher-webhook:v0.1.4
 rancher/mirrored-ingress-nginx-kube-webhook-certgen:v1.1.1
-rancher/mirrored-nginx-ingress-controller-defaultbackend:1.5-rancher1
 rancher/rancher-operator:v0.1.4
-rancher/mirrored-calico-kube-controllers:v3.17.2
 rancher/kube-api-auth:v0.1.4
 quay.io/minio/minio:RELEASE.2023-09-04T19-57-37Z
 busybox:latest
