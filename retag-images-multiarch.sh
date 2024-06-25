@@ -41,7 +41,7 @@ while read image; do
   		.
   
   if [[ $? == 0 ]]; then
-    echo "Sync Image SUCCESS: $image => $new_image"
+    echo "Sync SUCCESS: $image => $new_image"
   else
     echo "Sync FAILED: $image => $new_image"
     continue

@@ -33,26 +33,26 @@ while read image; do
   docker pull "$image"
 
   if [[ $? == 0 ]]; then
-    echo "Pull Image: $image"
+    echo "Pull SUCCESS: $image"
   else
-    echo "Pull Image FAILED: $image"
+    echo "Pull FAILED: $image"
   fi
 
   new_image="$registry"/library/"$image"
   
   docker tag "$image" "$new_image"
   if [[ $? == 0 ]]; then
-    echo "Retag Image: $image => $new_image"
+    echo "Retag SUCCESS: $image => $new_image"
   else
-    echo "Retag Image FAILED: $image => $new_image"
+    echo "Retag FAILED: $image => $new_image"
     continue
   fi
 
   docker push "$new_image"
   if [[ $? == 0 ]]; then
-    echo "Push Image: $new_image"
+    echo "Sync SUCCESS: $new_image"
   else
-    echo "Push Image FAILED: $new_image"
+    echo "Sync FAILED: $new_image"
   fi
   
   echo "::endgroup::"
