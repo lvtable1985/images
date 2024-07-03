@@ -1,5 +1,7 @@
 // rancher
 rancher/prom-prometheus:v2.18.2
+rancher/jimmidyson-configmap-reload:v0.3.0
+rancher/library-nginx:1.19.2-alpine
 rancher/hyperkube:v1.20.15-rancher2
 rancher/rancher:v2.5.15
 rancher/nginx-ingress-controller:nginx-1.2.1-rancher1
