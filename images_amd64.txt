@@ -1,4 +1,5 @@
 // rancher
+rancher/istio-kubectl:1.5.10
 rancher/coreos-prometheus-config-reloader:vO.38.1
 rancher/nginx-ingress-controller:nginx-0.35.0-rancher2
 rancher/coreos-kube-state-metrics:v1.9.7
