@@ -1,4 +1,6 @@
 // rancher
+rancher/coreos-prometheus-config-reloader:v0.39.0
+rancher/coreos-prometheus-config-reloader:v0.43.0
 rancher/prom-prometheus:v2.18.2
 rancher/jimmidyson-configmap-reload:v0.3.0
 rancher/library-nginx:1.19.2-alpine
