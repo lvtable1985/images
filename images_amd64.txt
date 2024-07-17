@@ -30,6 +30,7 @@ docker.elastic.co/eck/eck-operator:1.2.1
 // fluentd
 fluent/fluentd:v1.3-onbuild-1
 // oracle-xe
+wnameless/oracle-xe-11g-r2
 christophesurmont/oracle-xe-11g:latest
 // prometheus
 bitnami/redis-exporter:1-debian-10
