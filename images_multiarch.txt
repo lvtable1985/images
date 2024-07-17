@@ -82,6 +82,7 @@ grafana/grafana:7.0.5
 grafana/grafana:9.1.0
 grafana/mimir:2.9.0
 // nginx
+nginx:alpine
 nginx:stable-alpine
 nginx:1.19
 nginx:1.19.0
