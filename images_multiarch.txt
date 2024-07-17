@@ -29,7 +29,6 @@ rancher/rancher-webhook:v0.1.4
 rancher/mirrored-ingress-nginx-kube-webhook-certgen:v1.1.1
 rancher/rancher-operator:v0.1.4
 rancher/kube-api-auth:v0.1.4
-quay.io/minio/minio:RELEASE.2023-09-04T19-57-37Z
 busybox:latest
 nginx:latest
 rabbitmq:3.8-management-alpine
@@ -65,6 +64,7 @@ busybox:1.28
 // rabbitmq
 rabbitmq:3.8-management-alpine
 // mysql
+mysql:8
 bitnami/mysql:8.0.34-debian-11-r0
 // redis
 bitnami/redis:7.0
@@ -86,6 +86,8 @@ nginx:1.19.0
 nginx:1.17.5
 nginxinc/nginx-unprivileged:1.24-alpine
 // minio
+quay.io/minio/mc:RELEASE.2023-09-04T19-57-37Z
+quay.io/minio/minio:RELEASE.2023-09-04T19-57-37Z
 minio/minio:RELEASE.2024-05-10T01-41-38Z
 minio/minio:RELEASE.2022-12-12T19-27-27Z
 minio/mc:RELEASE.2022-12-13T00-23-28Z
