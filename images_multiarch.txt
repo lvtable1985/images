@@ -1,3 +1,5 @@
+// apache
+apache/airflow:2.9.3
 // rancher
 rancher/hyperkube:v1.20.15-rancher1
 rancher/coreos-prometheus-config-reloader:v0.39.0
