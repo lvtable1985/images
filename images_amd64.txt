@@ -39,3 +39,4 @@ prom/snmp-generator:latest
 // tomcat
 tomcat:7-jre8-alpine
 // end of file
+pi4k8s/db2doc:2.0
