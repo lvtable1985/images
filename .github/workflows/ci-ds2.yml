@@ -37,8 +37,8 @@ jobs:
       - name: Retag amd64 images 1
         run: ./retag-images.sh images_list.txt ${{ secrets.HARBOR_URL }}
 
-      - name: Retag amd64 images 2
-        run: ./retag-images.sh images_list.txt ${{ secrets.HARBOR_URL }}
+#      - name: Retag amd64 images 2
+#        run: ./retag-images.sh images_list.txt ${{ secrets.HARBOR_URL }}
 
 
 

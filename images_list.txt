@@ -3,4 +3,4 @@
 //apache/flink:1.17-scala_2.12
 //selectdb/superset_3.0.1-cloud_3.0.3:latest
 
-apache/doris
+apache/doris:1.2.1-be-x86_64
