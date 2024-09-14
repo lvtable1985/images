@@ -4,4 +4,5 @@
 //selectdb/superset_3.0.1-cloud_3.0.3:latest
 
 //apache/doris:1.2.1-be-x86_64
-apache/doris:1.2.1-fe-x86_64
+//apache/doris:1.2.1-fe-x86_64
+apache/doris:build-env-for-2.0-no-avx2
