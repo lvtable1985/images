@@ -7,4 +7,5 @@
 //apache/doris:1.2.1-fe-x86_64
 //mobz/elasticsearch-head:5
 //freeoneplus/doris:2.1.0
-apache/doris:build-env-for-2.0-no-avx2
+//apache/doris:build-env-for-2.0-no-avx2
+dbeaver/cloudbeaver-ee:24.2.0
