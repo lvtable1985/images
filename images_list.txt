@@ -11,4 +11,5 @@
 //dbeaver/cloudbeaver-ee:24.2.0
 //dbeaver/cloudbeaver:22.0.4
 //bitnami/clickhouse:24.8.4
-dbeaver/cloudbeaver:21.2.3
+//dbeaver/cloudbeaver:21.2.3
+xuxueli/xxl-job-admin:2.4.1
