@@ -14,4 +14,7 @@
 //dbeaver/cloudbeaver:21.2.3
 //xuxueli/xxl-job-admin:2.4.1
 //wurstmeister/kafka
-portainer/portainer
+//portainer/portainer
+//汉化版
+6053537/portainer-ce:2.24.1
+
