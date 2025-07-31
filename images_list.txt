@@ -16,5 +16,5 @@
 //wurstmeister/kafka
 //portainer/portainer
 //汉化版
-6053537/portainer-ce:2.24.1
-
+//6053537/portainer-ce:2.24.1
+bitnami/redis:7.0
