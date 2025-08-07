@@ -27,15 +27,29 @@ jobs:
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
         
-      - name: Login Harbor
+      - name: Login Harbor2
         uses: docker/login-action@v3.2.0
         with:
           registry: ${{ secrets.HARBOR2_URL }}
           username: ${{ secrets.HARBOR2_COMMON_USERNAME }}
           password: ${{ secrets.HARBOR2_COMMON_PASSWORD }}
 
-   #   - name: Retag amd64 images 1
-   #     run: ./retag-images.sh images_multiarch.txt ${{ secrets.HARBOR_URL }}
+      - name: Retag & Push multiarch images
+        run: ./retag-images-multiarch.sh images_multiarch.txt ${{ secrets.HARBOR2_URL }}
 
-      - name: Retag amd64 images 2
-        run: ./retag-images.sh images_list.txt ${{ secrets.HARBOR_URL2 }}
+  sync_amd64:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Login Harbor2
+        uses: docker/login-action@v3.2.0
+        with:
+          registry: ${{ secrets.HARBOR2_URL }}
+          username: ${{ secrets.HARBOR2_COMMON_USERNAME }}
+          password: ${{ secrets.HARBOR2_COMMON_PASSWORD }}
+
+      - name: Retag & Push amd64 images
+        run: ./retag-images.sh images_list.txt ${{ secrets.HARBOR2_URL }}
