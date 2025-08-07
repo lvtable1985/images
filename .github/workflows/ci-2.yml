@@ -31,8 +31,8 @@ jobs:
         uses: docker/login-action@v3.2.0
         with:
           registry: ${{ secrets.HARBOR2_URL }}
-          username: ${{ secrets.HARBOR_COMMON_USERNAME }}
-          password: ${{ secrets.HARBOR_COMMON_PASSWORD }}
+          username: ${{ secrets.HARBOR2_COMMON_USERNAME }}
+          password: ${{ secrets.HARBOR2_COMMON_PASSWORD }}
 
       - name: Retag amd64 images 1
         run: ./retag-images.sh images_list.txt ${{ secrets.HARBOR_URL }}
