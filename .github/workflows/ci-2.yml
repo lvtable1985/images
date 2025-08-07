@@ -38,4 +38,4 @@ jobs:
 #        run: ./retag-images.sh images_multiarch.txt ${{ secrets.HARBOR_URL }}
 
       - name: Retag amd64 images 2
-        run: ./retag-images-multiarch.sh images_amd64.txt ${{ secrets.HARBOR_URL }}
+        run: ./retag-images-multiarch.sh images_list.txt ${{ secrets.HARBOR2_URL }}
