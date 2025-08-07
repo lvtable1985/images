@@ -18,4 +18,5 @@
 //汉化版
 //6053537/portainer-ce:2.24.1
 //bitnami/redis:7.0
-apache/seatunnel:2.3.11
+//apache/seatunnel:2.3.11
+jetty:jdk21
