@@ -21,4 +21,5 @@
 //apache/seatunnel:2.3.11
 //jetty:jdk21
 //rclone/rclone:1.72.0
-chonjay21/webdav
+//chonjay21/webdav
+ubuntu:22.04
