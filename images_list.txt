@@ -22,4 +22,5 @@
 //jetty:jdk21
 //rclone/rclone:1.72.0
 //chonjay21/webdav
-ubuntu:22.04
+//ubuntu:22.04
+onlyoffice/documentserver:9.3
