@@ -24,4 +24,7 @@
 //chonjay21/webdav
 //ubuntu:22.04
 //onlyoffice/documentserver:9.3
-rockylinux:8
+//rockylinux:8
+
+//Dify相关镜像
+langgenius/dify-api:1.14.0-rc1
